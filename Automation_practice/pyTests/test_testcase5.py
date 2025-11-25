@@ -13,7 +13,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from pageObjects.delete_account_page import Delete_Account
 from pageObjects.signup import SignUp
 #sys.path.append( os.path.dirname( os.path.dirname( os.path.abspath( __file__ ) ) )
-test_data_path = '/Users/anmolasati/PycharmProjects/Automation_practice/Data/test_testcase5.json'
+test_data_path = '/Users/anmolasati/PycharmProjects/git/Automation_practice/Data/test_testcase5.json'
 #/Users/anmolasati/PycharmProjects/PythonTesting/data/test_e2e_greenkart.json
 with open(test_data_path) as f:
     test_data = json.load(f)
@@ -25,6 +25,8 @@ def test_e2e(browser_instance,test_list_item):
     driver.get('https://automationexercise.com')
     signup = SignUp(driver)
     signup.already_registered_user(test_list_item["name"], test_list_item["email"])
+    # runs perfectly unless ads
+    #Test Case 5: Register User with existing email
 
 
 

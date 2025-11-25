@@ -14,7 +14,7 @@ from pageObjects.delete_account_page import Delete_Account
 from pageObjects.login import Login_page
 from pageObjects.signup import SignUp
 #sys.path.append( os.path.dirname( os.path.dirname( os.path.abspath( __file__ ) ) )
-test_data_path = '/Users/anmolasati/PycharmProjects/Automation_practice/Data/test_testcase4.json'
+test_data_path = '/Users/anmolasati/PycharmProjects/git/Automation_practice/Data/test_testcase4.json'
 with open(test_data_path) as f:
     test_data = json.load(f)
     test_list = test_data["data"]
@@ -26,6 +26,9 @@ def test_e2e(browser_instance,test_list_item):
     login = Login_page(driver)
     login.login(test_list_item["login_email"], test_list_item["login_password"])
     login.logout()
+    # runs perfectly unless ads
+    #Test Case 4: Logout User
+
 
 
 

@@ -14,7 +14,7 @@ from pageObjects.delete_account_page import Delete_Account
 from pageObjects.login import Login_page
 from pageObjects.signup import SignUp
 #sys.path.append( os.path.dirname( os.path.dirname( os.path.abspath( __file__ ) ) )
-test_data_path = '/Users/anmolasati/PycharmProjects/Automation_practice/Data/test_testcase2.json'
+test_data_path = '/Users/anmolasati/PycharmProjects/git/Automation_practice/Data/test_testcase2.json'
 with open(test_data_path) as f:
     test_data = json.load(f)
     test_list = test_data["data"]
@@ -27,8 +27,11 @@ def test_e2e(browser_instance,test_list_item):
     login.login(test_list_item["login_email"], test_list_item["login_password"])
     signup = SignUp(driver)
     signup.verify_logged_in_page()
-    delete_account = Delete_Account(driver)
-    delete_account.delete_account_and_confirmation()
+    #delete_account = Delete_Account(driver)
+    #delete_account.delete_account_and_confirmation()
+
+    # runs perfectly unless ads
+    #Test Case 2: Login User with correct email and password
 
 
 
