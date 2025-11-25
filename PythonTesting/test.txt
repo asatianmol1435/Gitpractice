@@ -1,5 +1,0 @@
-apple
-boy
-cat
-dog
-elephant
