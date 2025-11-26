@@ -1,8 +1,0 @@
-print("Welcome to the tip calculator!")
-bill_amount = float(input("What was the total bill?\n$"))
-tip_percentage = int(input("How much % of tip would you like to give? 10,12 or 15\n"))
-people = int(input("How many people to split the bill?\n"))
-#tip_amount = (tip_percentage / 100)
-final_amount = float(bill_amount+(bill_amount*(tip_percentage / 100)))
-split_bill = round(float(final_amount/people),2)
-print(f"Each person should pay: ${split_bill}")
