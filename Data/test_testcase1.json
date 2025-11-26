@@ -1,0 +1,19 @@
+{
+  "data" : [
+    {
+      "name" : "Anmol Asati",
+      "email" : "anmolasati60@gmail.com",
+      "password" : "Anmol@2006",
+      "first_name" : "Anmol",
+      "last_name" : "Asati",
+      "company" : "Tata Consultancy Services",
+      "address1" : "Radhakrishnan Apartment, Behind Kachore lawn",
+      "address2" : "Shilpa society, Manish Nagar",
+      "state" : "Maharashtra",
+      "city" : "Nagpur",
+      "zipcode" : "441905",
+      "mobile_num" : "9876543210"
+    }
+  ]
+
+}
